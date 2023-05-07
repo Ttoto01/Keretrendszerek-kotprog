@@ -1,0 +1,13 @@
+<mat-card>
+    <mat-card-header>
+        <mat-card-title>{{makerName}}</mat-card-title>
+        <mat-card-subtitle>{{makerMessage}}</mat-card-subtitle>
+    </mat-card-header>
+    <img mat-card-image src="{{postData.imgUrl}}">
+    <mat-card-content>{{postData.message}}</mat-card-content>
+    <mat-card-actions>
+        <mat-icon (click)="newReply()"  class="actions" color="primary">chat_bubble_outline</mat-icon>
+        <mat-icon class="actions" color="primary">favorite_border</mat-icon>
+        <mat-icon class="actions" color="primary">save</mat-icon>
+    </mat-card-actions>
+</mat-card>

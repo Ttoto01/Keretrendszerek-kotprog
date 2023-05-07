@@ -1,0 +1,17 @@
+<div id="navigation">
+  <div id="navContent">
+    <div id="navLeft">
+      <div onclick="location.href ='https://twitter.com/?lang=hu'" class="navItems">Twitter</div>
+    </div>
+    <div id="navRight">
+      <div *ngIf="!loggedIn()" (click)="letsGoClick()" class="navItems">Login</div>
+      <div *ngIf="loggedIn() && userWithProfile" class="navItems">{{getUsername()}}, Wanna:</div>
+      <div *ngIf="loggedIn()" (click)="logoutClick()" class="navItems">Logout</div>
+    </div>
+  </div>
+</div>
+
+
+<router-outlet></router-outlet>
+
+<app-profile [show]="loggedIn() && !userWithProfile" ></app-profile>

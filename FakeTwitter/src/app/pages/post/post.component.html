@@ -1,0 +1,6 @@
+<div id="cover"> 
+    <div id="postLook">
+        <app-post-show *ngFor="let post of posts" [postData] = "post"></app-post-show> 
+    </div>
+    <button (click)="newPost()" mat-fab color="primary" id="posting"><mat-icon>add</mat-icon></button>
+</div>      

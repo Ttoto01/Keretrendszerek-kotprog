@@ -1,0 +1,7 @@
+<div id="profile" [ngClass]="{'ongoing': show, 'passive': !show}">
+    <div id="pContent">
+        <input #username placeholder="Username">
+        <textarea #userinfo placeholder="Anyithing you want"></textarea>
+        <button (click)="finishClick(username,userinfo)" mat-raised-button color="primary">Finish</button>
+    </div>
+</div>

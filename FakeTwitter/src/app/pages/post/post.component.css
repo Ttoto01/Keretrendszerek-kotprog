@@ -1,0 +1,17 @@
+#cover{
+    background-color: aqua;
+}
+
+#posting{
+    position: fixed;
+    bottom: 50vh;
+    right: 2em;
+}
+
+#postLook{
+    max-width: 500px;
+    margin-top: 5em;
+    margin-bottom: 5em;
+    margin-left: auto;
+    margin-right: auto;
+}

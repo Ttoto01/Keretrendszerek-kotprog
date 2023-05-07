@@ -1,0 +1,14 @@
+<p>Reply</p>
+<div id="reply">
+    <div *ngFor="let comment of comments" [ngClass]="{'commentBox': 'true', 'maker' : isCommentMaker(comment)}">
+        <div>
+            <p class="commentName">{{comment.userName}}</p>
+            <p [ngClass]="{'comment': 'true', 'makerComment' : isCommentMaker(comment)}">{{comment.comment}}</p>
+        </div>
+    </div>
+</div>
+<div id="actionBar">
+    <input placeholder="......" #commentInput>
+    <button (click)="newComment(commentInput)" mat-raised-button color="primary"><mat-icon>send</mat-icon></button>
+
+</div>

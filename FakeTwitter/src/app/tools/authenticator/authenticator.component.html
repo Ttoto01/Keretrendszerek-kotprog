@@ -1,0 +1,23 @@
+<div id="authenticator">
+    <mat-card id="auContent">
+        <mat-card-header>
+            <mat-card-title>{{headerText()}}</mat-card-title>
+        </mat-card-header>
+        <div *ngIf="isLogin()">
+            <input #loginEmail placeholder="Email">
+            <input #loginPswd placeholder="Password" type="password">
+            <button (click)="loginClick(loginEmail, loginPswd)" mat-raised-button color="primary">Login</button>
+        </div>
+        <div *ngIf="isRegister()">
+            <input #registerEmail placeholder="Email">
+            <input #registerPswd placeholder="Password" type="password">
+            <input #registerCPswd placeholder="Confirm Password" type="password">
+            <button (click)="registerClick(registerEmail, registerPswd, registerCPswd)" mat-raised-button color="primary">Register</button>
+        </div>
+        <mat-card-actions align="end">
+            <button (click)="registerCard()" mat-raised-button>Register</button>
+            <button (click)="loginCard()" mat-raised-button>Login</button>
+        </mat-card-actions>
+    </mat-card>
+</div>
+

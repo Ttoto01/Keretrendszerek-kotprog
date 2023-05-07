@@ -1,0 +1,27 @@
+#newImg{
+    display: none;
+}
+
+textarea{
+    font-size: 2em;
+    padding: 1.5em;
+    resize: none;
+    width: 300px;
+    min-height: 250px;
+    border: none;
+    outline: none;
+}
+
+#postLook{
+    text-align: right;
+    margin-top: 1em;
+}
+
+#postLookImg{
+    object-fit: cover;
+    object-position: center;
+    width: 150px;
+    height: 100px;
+    border-radius: 1em;
+    border: 2px dashed black;
+}

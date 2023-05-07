@@ -1,0 +1,20 @@
+<mat-card>
+    <mat-card-header>
+        <mat-card-title>New Post</mat-card-title>
+    </mat-card-header>
+    <div>
+        <textarea #messageInput placeholder="Toughtful message for everyone........"></textarea>
+    </div>
+    <div id="postLook">
+        <img id="postLookImg">
+    </div>
+    <mat-card-actions align="end">
+        <button mat-button color="primary">
+            <label for="newImg">
+                <input #imgSelect (change)="imgSelected(imgSelect)" id="newImg" type="file" accept="image/*"/>
+                <mat-icon>insert_photo</mat-icon>
+            </label>
+        </button>
+        <button (click)="postCreate(messageInput)" mat-raised-button color="primary">Post</button>
+    </mat-card-actions>
+</mat-card>
